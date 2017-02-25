@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ReceiverCell" customModule="MojilalaMessageApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Of-eg-T6T">
+                        <rect key="frame" x="4" y="31.5" width="227" height="36.5"/>
+                        <color key="backgroundColor" red="0.64313725490196072" green="0.90588235294117647" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oX-eN-Xvr">
+                        <rect key="frame" x="12" y="39.5" width="217" height="20.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qlT-kN-702">
+                        <rect key="frame" x="237" y="8" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="4Gs-NP-VmQ"/>
+                            <constraint firstAttribute="height" constant="75" id="olg-EX-6Y5"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="qlT-kN-702" secondAttribute="bottom" constant="8" id="30z-dk-5nR"/>
+                    <constraint firstItem="qlT-kN-702" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="A9E-mY-2Qr"/>
+                    <constraint firstItem="7Of-eg-T6T" firstAttribute="trailing" secondItem="2oX-eN-Xvr" secondAttribute="trailing" constant="2" id="QVK-AX-nNk"/>
+                    <constraint firstItem="2oX-eN-Xvr" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="WQn-Ka-DyV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qlT-kN-702" secondAttribute="trailing" id="b3y-ay-ZDZ"/>
+                    <constraint firstItem="qlT-kN-702" firstAttribute="leading" secondItem="2oX-eN-Xvr" secondAttribute="trailing" constant="8" id="cez-Cf-mOf"/>
+                    <constraint firstItem="7Of-eg-T6T" firstAttribute="bottom" secondItem="2oX-eN-Xvr" secondAttribute="bottom" constant="8" id="i3P-Zd-ebZ"/>
+                    <constraint firstItem="7Of-eg-T6T" firstAttribute="leading" secondItem="2oX-eN-Xvr" secondAttribute="leading" constant="-8" id="oY0-xj-KUk"/>
+                    <constraint firstItem="2oX-eN-Xvr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="qkH-cl-kVv"/>
+                    <constraint firstItem="7Of-eg-T6T" firstAttribute="top" secondItem="2oX-eN-Xvr" secondAttribute="top" constant="-8" id="qsc-eq-doF"/>
+                    <constraint firstItem="2oX-eN-Xvr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yJX-Jy-cGM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imageReceiver" destination="qlT-kN-702" id="CW9-22-wlc"/>
+                <outlet property="labelBackgroundView" destination="7Of-eg-T6T" id="uIK-6X-2Wx"/>
+                <outlet property="labelMessage" destination="2oX-eN-Xvr" id="JbJ-dK-sMa"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AEF6E4074A96C0CB1A4F831 /* Pods_MojilalaMessageApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAB8E49B056C383615728C2 /* Pods_MojilalaMessageApp.framework */; };
+		2A7184131E60C9F700133ACE /* UINavigationBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7184121E60C9F700133ACE /* UINavigationBar+Extension.swift */; };
+		2ACA16101E5F586400E2910E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA160F1E5F586400E2910E /* LoginVC.swift */; };
+		2ACA16181E5F5ADA00E2910E /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA16171E5F5ADA00E2910E /* ServiceManager.swift */; };
+		2ACA161A1E5F5AEB00E2910E /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA16191E5F5AEB00E2910E /* UserManager.swift */; };
+		2ACA16201E5F5BF100E2910E /* ShakebleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA161F1E5F5BF100E2910E /* ShakebleProtocol.swift */; };
+		2ACA16371E5F8AAA00E2910E /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA162D1E5F8AAA00E2910E /* ChatView.swift */; };
+		2ACA16381E5F8AAA00E2910E /* ChatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ACA162E1E5F8AAA00E2910E /* ChatView.xib */; };
+		2ACA16391E5F8AAA00E2910E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA16301E5F8AAA00E2910E /* LoginView.swift */; };
+		2ACA163A1E5F8AAA00E2910E /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ACA16311E5F8AAA00E2910E /* LoginView.xib */; };
+		2ACA16451E5F8AE900E2910E /* MessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA16421E5F8AE900E2910E /* MessageResponse.swift */; };
+		2ACA164A1E5F8B0000E2910E /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA16481E5F8B0000E2910E /* Messages.swift */; };
+		2ACA164B1E5F8B0000E2910E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA16491E5F8B0000E2910E /* User.swift */; };
+		2ACA16521E5F8B5200E2910E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA164D1E5F8B5200E2910E /* AppDelegate.swift */; };
+		2ACA16531E5F8B5200E2910E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ACA164E1E5F8B5200E2910E /* Info.plist */; };
+		2ACA16541E5F8B5200E2910E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACA16501E5F8B5200E2910E /* LaunchScreen.storyboard */; };
+		2ACA16551E5F8B5200E2910E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACA16511E5F8B5200E2910E /* Main.storyboard */; };
+		2ACA16581E5F8B7B00E2910E /* BaseCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA16571E5F8B7B00E2910E /* BaseCustomView.swift */; };
+		2ACA165B1E5F8BB000E2910E /* GlobalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA165A1E5F8BB000E2910E /* GlobalHelper.swift */; };
+		2ACA165D1E5F8D2B00E2910E /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA165C1E5F8D2B00E2910E /* ErrorHandler.swift */; };
+		2AE4AA461E5DEDB4009E1C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE4AA451E5DEDB4009E1C7A /* Assets.xcassets */; };
+		2AE4AA541E5DEDB4009E1C7A /* MojilalaMessageAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE4AA531E5DEDB4009E1C7A /* MojilalaMessageAppTests.swift */; };
+		2AE4AA5F1E5DEDB4009E1C7A /* MojilalaMessageAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE4AA5E1E5DEDB4009E1C7A /* MojilalaMessageAppUITests.swift */; };
+		2AE4AA7C1E5DF3D0009E1C7A /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE4AA7B1E5DF3D0009E1C7A /* NibLoadableView.swift */; };
+		2AE4AA861E5E1E3E009E1C7A /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE4AA851E5E1E3E009E1C7A /* ChatVC.swift */; };
+		2AE81DAA1E60CDC3003F61EC /* SenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE81DA81E60CDC3003F61EC /* SenderCell.swift */; };
+		2AE81DAB1E60CDC3003F61EC /* SenderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AE81DA91E60CDC3003F61EC /* SenderCell.xib */; };
+		2AE81DAE1E60CDD8003F61EC /* ReceiverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE81DAC1E60CDD8003F61EC /* ReceiverCell.swift */; };
+		2AE81DAF1E60CDD8003F61EC /* ReceiverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AE81DAD1E60CDD8003F61EC /* ReceiverCell.xib */; };
+		2AE81DB11E60CEDA003F61EC /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE81DB01E60CEDA003F61EC /* ReusableCell.swift */; };
+		2AE81DB51E60CF46003F61EC /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE81DB41E60CF46003F61EC /* UITableView+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AE4AA501E5DEDB4009E1C7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AE4AA331E5DEDB4009E1C7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AE4AA3A1E5DEDB4009E1C7A;
+			remoteInfo = MojilalaMessageApp;
+		};
+		2AE4AA5B1E5DEDB4009E1C7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AE4AA331E5DEDB4009E1C7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AE4AA3A1E5DEDB4009E1C7A;
+			remoteInfo = MojilalaMessageApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A7184121E60C9F700133ACE /* UINavigationBar+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Extension.swift"; sourceTree = "<group>"; };
+		2ACA160F1E5F586400E2910E /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		2ACA16171E5F5ADA00E2910E /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		2ACA16191E5F5AEB00E2910E /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		2ACA161F1E5F5BF100E2910E /* ShakebleProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakebleProtocol.swift; sourceTree = "<group>"; };
+		2ACA162D1E5F8AAA00E2910E /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		2ACA162E1E5F8AAA00E2910E /* ChatView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatView.xib; sourceTree = "<group>"; };
+		2ACA16301E5F8AAA00E2910E /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2ACA16311E5F8AAA00E2910E /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		2ACA16421E5F8AE900E2910E /* MessageResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageResponse.swift; sourceTree = "<group>"; };
+		2ACA16481E5F8B0000E2910E /* Messages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		2ACA16491E5F8B0000E2910E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2ACA164D1E5F8B5200E2910E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2ACA164E1E5F8B5200E2910E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ACA16501E5F8B5200E2910E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2ACA16511E5F8B5200E2910E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2ACA16571E5F8B7B00E2910E /* BaseCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCustomView.swift; sourceTree = "<group>"; };
+		2ACA165A1E5F8BB000E2910E /* GlobalHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalHelper.swift; sourceTree = "<group>"; };
+		2ACA165C1E5F8D2B00E2910E /* ErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		2AE4AA3B1E5DEDB4009E1C7A /* MojilalaMessageApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MojilalaMessageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE4AA451E5DEDB4009E1C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AE4AA4F1E5DEDB4009E1C7A /* MojilalaMessageAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MojilalaMessageAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE4AA531E5DEDB4009E1C7A /* MojilalaMessageAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MojilalaMessageAppTests.swift; sourceTree = "<group>"; };
+		2AE4AA551E5DEDB4009E1C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AE4AA5A1E5DEDB4009E1C7A /* MojilalaMessageAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MojilalaMessageAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE4AA5E1E5DEDB4009E1C7A /* MojilalaMessageAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MojilalaMessageAppUITests.swift; sourceTree = "<group>"; };
+		2AE4AA601E5DEDB4009E1C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AE4AA7B1E5DF3D0009E1C7A /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		2AE4AA851E5E1E3E009E1C7A /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		2AE81DA81E60CDC3003F61EC /* SenderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderCell.swift; sourceTree = "<group>"; };
+		2AE81DA91E60CDC3003F61EC /* SenderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SenderCell.xib; sourceTree = "<group>"; };
+		2AE81DAC1E60CDD8003F61EC /* ReceiverCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverCell.swift; sourceTree = "<group>"; };
+		2AE81DAD1E60CDD8003F61EC /* ReceiverCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReceiverCell.xib; sourceTree = "<group>"; };
+		2AE81DB01E60CEDA003F61EC /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReusableCell.swift; path = "../../../../YS-ITunes/YS-ITunes/Classes/Protocol/ReusableCell.swift"; sourceTree = "<group>"; };
+		2AE81DB41E60CF46003F61EC /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		40D757B0F4E345BBAAC4B456 /* Pods-MojilalaMessageApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MojilalaMessageApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MojilalaMessageApp/Pods-MojilalaMessageApp.release.xcconfig"; sourceTree = "<group>"; };
+		8AAB8E49B056C383615728C2 /* Pods_MojilalaMessageApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MojilalaMessageApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26E5FB2FF113A853D4AC693 /* Pods-MojilalaMessageApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MojilalaMessageApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MojilalaMessageApp/Pods-MojilalaMessageApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AE4AA381E5DEDB4009E1C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AEF6E4074A96C0CB1A4F831 /* Pods_MojilalaMessageApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE4AA4C1E5DEDB4009E1C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE4AA571E5DEDB4009E1C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A7184111E60C9E800133ACE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2A7184121E60C9F700133ACE /* UINavigationBar+Extension.swift */,
+				2AE81DB41E60CF46003F61EC /* UITableView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2ACA16151E5F5ADA00E2910E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2ACA16191E5F5AEB00E2910E /* UserManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2ACA16161E5F5ADA00E2910E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2ACA16171E5F5ADA00E2910E /* ServiceManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2ACA162C1E5F8AAA00E2910E /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				2ACA162D1E5F8AAA00E2910E /* ChatView.swift */,
+				2ACA162E1E5F8AAA00E2910E /* ChatView.xib */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
+		2ACA162F1E5F8AAA00E2910E /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				2ACA16301E5F8AAA00E2910E /* LoginView.swift */,
+				2ACA16311E5F8AAA00E2910E /* LoginView.xib */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		2ACA163F1E5F8AE900E2910E /* ModelClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2ACA16471E5F8B0000E2910E /* Model */,
+				2ACA16411E5F8AE900E2910E /* Response */,
+			);
+			path = ModelClasses;
+			sourceTree = "<group>";
+		};
+		2ACA16411E5F8AE900E2910E /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				2ACA16421E5F8AE900E2910E /* MessageResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		2ACA16471E5F8B0000E2910E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2ACA16481E5F8B0000E2910E /* Messages.swift */,
+				2ACA16491E5F8B0000E2910E /* User.swift */,
+				2ACA165C1E5F8D2B00E2910E /* ErrorHandler.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2ACA164C1E5F8B5200E2910E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2ACA164D1E5F8B5200E2910E /* AppDelegate.swift */,
+				2ACA164E1E5F8B5200E2910E /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2ACA164F1E5F8B5200E2910E /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				2ACA16501E5F8B5200E2910E /* LaunchScreen.storyboard */,
+				2ACA16511E5F8B5200E2910E /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		2ACA16561E5F8B7B00E2910E /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2ACA16571E5F8B7B00E2910E /* BaseCustomView.swift */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		2ACA16591E5F8B9C00E2910E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2ACA165A1E5F8BB000E2910E /* GlobalHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		2AE4AA321E5DEDB4009E1C7A = {
+			isa = PBXGroup;
+			children = (
+				2AE4AA3D1E5DEDB4009E1C7A /* MojilalaMessageApp */,
+				2AE4AA521E5DEDB4009E1C7A /* MojilalaMessageAppTests */,
+				2AE4AA5D1E5DEDB4009E1C7A /* MojilalaMessageAppUITests */,
+				2AE4AA3C1E5DEDB4009E1C7A /* Products */,
+				BA941BA89D39B7D0BC3563BC /* Pods */,
+				6E37B267D93D354AD56D129F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2AE4AA3C1E5DEDB4009E1C7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AE4AA3B1E5DEDB4009E1C7A /* MojilalaMessageApp.app */,
+				2AE4AA4F1E5DEDB4009E1C7A /* MojilalaMessageAppTests.xctest */,
+				2AE4AA5A1E5DEDB4009E1C7A /* MojilalaMessageAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AE4AA3D1E5DEDB4009E1C7A /* MojilalaMessageApp */ = {
+			isa = PBXGroup;
+			children = (
+				2AE4AA451E5DEDB4009E1C7A /* Assets.xcassets */,
+				2ACA16561E5F8B7B00E2910E /* BaseClasses */,
+				2ACA164C1E5F8B5200E2910E /* Config */,
+				2A7184111E60C9E800133ACE /* Extensions */,
+				2ACA16591E5F8B9C00E2910E /* Helper */,
+				2ACA16151E5F5ADA00E2910E /* Manager */,
+				2ACA163F1E5F8AE900E2910E /* ModelClasses */,
+				2AE4AA741E5DF02D009E1C7A /* Protocols */,
+				2ACA16161E5F5ADA00E2910E /* Service */,
+				2ACA164F1E5F8B5200E2910E /* StoryBoards */,
+				2AE4AA6E1E5DEE17009E1C7A /* ViewControllers */,
+				2AE4AA701E5DEE17009E1C7A /* Views */,
+			);
+			path = MojilalaMessageApp;
+			sourceTree = "<group>";
+		};
+		2AE4AA521E5DEDB4009E1C7A /* MojilalaMessageAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AE4AA531E5DEDB4009E1C7A /* MojilalaMessageAppTests.swift */,
+				2AE4AA551E5DEDB4009E1C7A /* Info.plist */,
+			);
+			path = MojilalaMessageAppTests;
+			sourceTree = "<group>";
+		};
+		2AE4AA5D1E5DEDB4009E1C7A /* MojilalaMessageAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2AE4AA5E1E5DEDB4009E1C7A /* MojilalaMessageAppUITests.swift */,
+				2AE4AA601E5DEDB4009E1C7A /* Info.plist */,
+			);
+			path = MojilalaMessageAppUITests;
+			sourceTree = "<group>";
+		};
+		2AE4AA6E1E5DEE17009E1C7A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2AE4AA851E5E1E3E009E1C7A /* ChatVC.swift */,
+				2ACA160F1E5F586400E2910E /* LoginVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2AE4AA701E5DEE17009E1C7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2AE81DA71E60CD4B003F61EC /* Cells */,
+				2ACA162C1E5F8AAA00E2910E /* ChatView */,
+				2ACA162F1E5F8AAA00E2910E /* LoginView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2AE4AA741E5DF02D009E1C7A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2AE81DB01E60CEDA003F61EC /* ReusableCell.swift */,
+				2AE4AA7B1E5DF3D0009E1C7A /* NibLoadableView.swift */,
+				2ACA161F1E5F5BF100E2910E /* ShakebleProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2AE81DA71E60CD4B003F61EC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2AE81DA81E60CDC3003F61EC /* SenderCell.swift */,
+				2AE81DA91E60CDC3003F61EC /* SenderCell.xib */,
+				2AE81DAC1E60CDD8003F61EC /* ReceiverCell.swift */,
+				2AE81DAD1E60CDD8003F61EC /* ReceiverCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6E37B267D93D354AD56D129F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AAB8E49B056C383615728C2 /* Pods_MojilalaMessageApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA941BA89D39B7D0BC3563BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B26E5FB2FF113A853D4AC693 /* Pods-MojilalaMessageApp.debug.xcconfig */,
+				40D757B0F4E345BBAAC4B456 /* Pods-MojilalaMessageApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AE4AA3A1E5DEDB4009E1C7A /* MojilalaMessageApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AE4AA631E5DEDB4009E1C7A /* Build configuration list for PBXNativeTarget "MojilalaMessageApp" */;
+			buildPhases = (
+				457CB1D37E50D997BEC4B3CB /* [CP] Check Pods Manifest.lock */,
+				2AE4AA371E5DEDB4009E1C7A /* Sources */,
+				2AE4AA381E5DEDB4009E1C7A /* Frameworks */,
+				2AE4AA391E5DEDB4009E1C7A /* Resources */,
+				F9EF9BF05914A2A58E67D113 /* [CP] Embed Pods Frameworks */,
+				B9BF01EB968AFF8DE4DE6E12 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MojilalaMessageApp;
+			productName = MojilalaMessageApp;
+			productReference = 2AE4AA3B1E5DEDB4009E1C7A /* MojilalaMessageApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2AE4AA4E1E5DEDB4009E1C7A /* MojilalaMessageAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AE4AA661E5DEDB4009E1C7A /* Build configuration list for PBXNativeTarget "MojilalaMessageAppTests" */;
+			buildPhases = (
+				2AE4AA4B1E5DEDB4009E1C7A /* Sources */,
+				2AE4AA4C1E5DEDB4009E1C7A /* Frameworks */,
+				2AE4AA4D1E5DEDB4009E1C7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AE4AA511E5DEDB4009E1C7A /* PBXTargetDependency */,
+			);
+			name = MojilalaMessageAppTests;
+			productName = MojilalaMessageAppTests;
+			productReference = 2AE4AA4F1E5DEDB4009E1C7A /* MojilalaMessageAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2AE4AA591E5DEDB4009E1C7A /* MojilalaMessageAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AE4AA691E5DEDB4009E1C7A /* Build configuration list for PBXNativeTarget "MojilalaMessageAppUITests" */;
+			buildPhases = (
+				2AE4AA561E5DEDB4009E1C7A /* Sources */,
+				2AE4AA571E5DEDB4009E1C7A /* Frameworks */,
+				2AE4AA581E5DEDB4009E1C7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AE4AA5C1E5DEDB4009E1C7A /* PBXTargetDependency */,
+			);
+			name = MojilalaMessageAppUITests;
+			productName = MojilalaMessageAppUITests;
+			productReference = 2AE4AA5A1E5DEDB4009E1C7A /* MojilalaMessageAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AE4AA331E5DEDB4009E1C7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Omer Karayel";
+				TargetAttributes = {
+					2AE4AA3A1E5DEDB4009E1C7A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = THHMJ2CHB3;
+						ProvisioningStyle = Automatic;
+					};
+					2AE4AA4E1E5DEDB4009E1C7A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2AE4AA3A1E5DEDB4009E1C7A;
+					};
+					2AE4AA591E5DEDB4009E1C7A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2AE4AA3A1E5DEDB4009E1C7A;
+					};
+				};
+			};
+			buildConfigurationList = 2AE4AA361E5DEDB4009E1C7A /* Build configuration list for PBXProject "MojilalaMessageApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2AE4AA321E5DEDB4009E1C7A;
+			productRefGroup = 2AE4AA3C1E5DEDB4009E1C7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AE4AA3A1E5DEDB4009E1C7A /* MojilalaMessageApp */,
+				2AE4AA4E1E5DEDB4009E1C7A /* MojilalaMessageAppTests */,
+				2AE4AA591E5DEDB4009E1C7A /* MojilalaMessageAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AE4AA391E5DEDB4009E1C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ACA16531E5F8B5200E2910E /* Info.plist in Resources */,
+				2ACA16381E5F8AAA00E2910E /* ChatView.xib in Resources */,
+				2AE4AA461E5DEDB4009E1C7A /* Assets.xcassets in Resources */,
+				2ACA16551E5F8B5200E2910E /* Main.storyboard in Resources */,
+				2ACA16541E5F8B5200E2910E /* LaunchScreen.storyboard in Resources */,
+				2AE81DAB1E60CDC3003F61EC /* SenderCell.xib in Resources */,
+				2AE81DAF1E60CDD8003F61EC /* ReceiverCell.xib in Resources */,
+				2ACA163A1E5F8AAA00E2910E /* LoginView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE4AA4D1E5DEDB4009E1C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE4AA581E5DEDB4009E1C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		457CB1D37E50D997BEC4B3CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9BF01EB968AFF8DE4DE6E12 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MojilalaMessageApp/Pods-MojilalaMessageApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9EF9BF05914A2A58E67D113 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MojilalaMessageApp/Pods-MojilalaMessageApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AE4AA371E5DEDB4009E1C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ACA164A1E5F8B0000E2910E /* Messages.swift in Sources */,
+				2AE4AA861E5E1E3E009E1C7A /* ChatVC.swift in Sources */,
+				2AE4AA7C1E5DF3D0009E1C7A /* NibLoadableView.swift in Sources */,
+				2ACA16201E5F5BF100E2910E /* ShakebleProtocol.swift in Sources */,
+				2ACA165B1E5F8BB000E2910E /* GlobalHelper.swift in Sources */,
+				2ACA16521E5F8B5200E2910E /* AppDelegate.swift in Sources */,
+				2ACA164B1E5F8B0000E2910E /* User.swift in Sources */,
+				2ACA161A1E5F5AEB00E2910E /* UserManager.swift in Sources */,
+				2AE81DB51E60CF46003F61EC /* UITableView+Extension.swift in Sources */,
+				2AE81DB11E60CEDA003F61EC /* ReusableCell.swift in Sources */,
+				2ACA16371E5F8AAA00E2910E /* ChatView.swift in Sources */,
+				2ACA16581E5F8B7B00E2910E /* BaseCustomView.swift in Sources */,
+				2A7184131E60C9F700133ACE /* UINavigationBar+Extension.swift in Sources */,
+				2ACA165D1E5F8D2B00E2910E /* ErrorHandler.swift in Sources */,
+				2ACA16181E5F5ADA00E2910E /* ServiceManager.swift in Sources */,
+				2ACA16101E5F586400E2910E /* LoginVC.swift in Sources */,
+				2AE81DAA1E60CDC3003F61EC /* SenderCell.swift in Sources */,
+				2ACA16451E5F8AE900E2910E /* MessageResponse.swift in Sources */,
+				2AE81DAE1E60CDD8003F61EC /* ReceiverCell.swift in Sources */,
+				2ACA16391E5F8AAA00E2910E /* LoginView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE4AA4B1E5DEDB4009E1C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE4AA541E5DEDB4009E1C7A /* MojilalaMessageAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE4AA561E5DEDB4009E1C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE4AA5F1E5DEDB4009E1C7A /* MojilalaMessageAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AE4AA511E5DEDB4009E1C7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AE4AA3A1E5DEDB4009E1C7A /* MojilalaMessageApp */;
+			targetProxy = 2AE4AA501E5DEDB4009E1C7A /* PBXContainerItemProxy */;
+		};
+		2AE4AA5C1E5DEDB4009E1C7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AE4AA3A1E5DEDB4009E1C7A /* MojilalaMessageApp */;
+			targetProxy = 2AE4AA5B1E5DEDB4009E1C7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2AE4AA611E5DEDB4009E1C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2AE4AA621E5DEDB4009E1C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AE4AA641E5DEDB4009E1C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B26E5FB2FF113A853D4AC693 /* Pods-MojilalaMessageApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = THHMJ2CHB3;
+				INFOPLIST_FILE = "$(SRCROOT)/MojilalaMessageApp/Config/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omerkarayel.MojilalaMessageApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2AE4AA651E5DEDB4009E1C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40D757B0F4E345BBAAC4B456 /* Pods-MojilalaMessageApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = THHMJ2CHB3;
+				INFOPLIST_FILE = "$(SRCROOT)/MojilalaMessageApp/Config/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omerkarayel.MojilalaMessageApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2AE4AA671E5DEDB4009E1C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MojilalaMessageAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omerkarayel.MojilalaMessageAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MojilalaMessageApp.app/MojilalaMessageApp";
+			};
+			name = Debug;
+		};
+		2AE4AA681E5DEDB4009E1C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MojilalaMessageAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omerkarayel.MojilalaMessageAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MojilalaMessageApp.app/MojilalaMessageApp";
+			};
+			name = Release;
+		};
+		2AE4AA6A1E5DEDB4009E1C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MojilalaMessageAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omerkarayel.MojilalaMessageAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MojilalaMessageApp;
+			};
+			name = Debug;
+		};
+		2AE4AA6B1E5DEDB4009E1C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MojilalaMessageAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omerkarayel.MojilalaMessageAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MojilalaMessageApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AE4AA361E5DEDB4009E1C7A /* Build configuration list for PBXProject "MojilalaMessageApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE4AA611E5DEDB4009E1C7A /* Debug */,
+				2AE4AA621E5DEDB4009E1C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AE4AA631E5DEDB4009E1C7A /* Build configuration list for PBXNativeTarget "MojilalaMessageApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE4AA641E5DEDB4009E1C7A /* Debug */,
+				2AE4AA651E5DEDB4009E1C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AE4AA661E5DEDB4009E1C7A /* Build configuration list for PBXNativeTarget "MojilalaMessageAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE4AA671E5DEDB4009E1C7A /* Debug */,
+				2AE4AA681E5DEDB4009E1C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AE4AA691E5DEDB4009E1C7A /* Build configuration list for PBXNativeTarget "MojilalaMessageAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE4AA6A1E5DEDB4009E1C7A /* Debug */,
+				2AE4AA6B1E5DEDB4009E1C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AE4AA331E5DEDB4009E1C7A /* Project object */;
+}
