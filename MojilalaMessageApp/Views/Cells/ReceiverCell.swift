@@ -13,6 +13,7 @@ class ReceiverCell: UITableViewCell, ReusableCell,NibLoadableView {
     //Outlets
     @IBOutlet weak var labelBackgroundView: UIView!
     @IBOutlet weak var labelMessage: UILabel!
+    @IBOutlet weak var labelTime: UILabel!
     @IBOutlet weak var imageReceiver: UIImageView!
     
     //MARK: - Init
@@ -21,8 +22,14 @@ class ReceiverCell: UITableViewCell, ReusableCell,NibLoadableView {
         
         labelMessage.text = message.text ?? ""
         
+        if let timestamp = message.timestamp  {
+            let date = NSDate(timeIntervalSince1970: Double(timestamp))
+            labelTime.text = String(describing: date)
+            
+        }
+        
         labelBackgroundView.layer.cornerRadius = 10
-       
+        
         imageReceiver.layer.cornerRadius = imageReceiver.frame.width / 2
         imageReceiver.contentMode = .scaleAspectFit
         imageReceiver.clipsToBounds = true

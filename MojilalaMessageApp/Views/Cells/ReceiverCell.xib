@@ -36,11 +36,19 @@
                             <constraint firstAttribute="height" constant="75" id="olg-EX-6Y5"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ag-eu-CND">
+                        <rect key="frame" x="12" y="77" width="25.5" height="14"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="10"/>
+                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="qlT-kN-702" secondAttribute="bottom" constant="8" id="30z-dk-5nR"/>
                     <constraint firstItem="qlT-kN-702" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="A9E-mY-2Qr"/>
+                    <constraint firstItem="1ag-eu-CND" firstAttribute="top" secondItem="7Of-eg-T6T" secondAttribute="bottom" constant="8.5" id="No3-tx-yRq"/>
+                    <constraint firstItem="1ag-eu-CND" firstAttribute="leading" secondItem="2oX-eN-Xvr" secondAttribute="leading" id="Osa-qD-OgM"/>
                     <constraint firstItem="7Of-eg-T6T" firstAttribute="trailing" secondItem="2oX-eN-Xvr" secondAttribute="trailing" constant="2" id="QVK-AX-nNk"/>
                     <constraint firstItem="2oX-eN-Xvr" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="WQn-Ka-DyV"/>
                     <constraint firstAttribute="trailingMargin" secondItem="qlT-kN-702" secondAttribute="trailing" id="b3y-ay-ZDZ"/>
@@ -49,6 +57,7 @@
                     <constraint firstItem="7Of-eg-T6T" firstAttribute="leading" secondItem="2oX-eN-Xvr" secondAttribute="leading" constant="-8" id="oY0-xj-KUk"/>
                     <constraint firstItem="2oX-eN-Xvr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="qkH-cl-kVv"/>
                     <constraint firstItem="7Of-eg-T6T" firstAttribute="top" secondItem="2oX-eN-Xvr" secondAttribute="top" constant="-8" id="qsc-eq-doF"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1ag-eu-CND" secondAttribute="bottom" id="r29-21-l6L"/>
                     <constraint firstItem="2oX-eN-Xvr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yJX-Jy-cGM"/>
                 </constraints>
             </tableViewCellContentView>
@@ -57,6 +66,7 @@
                 <outlet property="imageReceiver" destination="qlT-kN-702" id="CW9-22-wlc"/>
                 <outlet property="labelBackgroundView" destination="7Of-eg-T6T" id="uIK-6X-2Wx"/>
                 <outlet property="labelMessage" destination="2oX-eN-Xvr" id="JbJ-dK-sMa"/>
+                <outlet property="labelTime" destination="1ag-eu-CND" id="hcQ-8j-Rcf"/>
             </connections>
         </tableViewCell>
     </objects>
