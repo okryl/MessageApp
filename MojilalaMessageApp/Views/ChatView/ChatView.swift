@@ -44,7 +44,7 @@ class ChatView: BaseCustomView, NibLoadableView {
         tableView.scrollIndicatorInsets.bottom = 50.0
     }
     
-    //MARK: - Call
+    //MARK: - Message Handler
     func updateTableView(height: CGFloat) {
         //Keyboard Opening Animation
         tableView.contentInset.bottom = height

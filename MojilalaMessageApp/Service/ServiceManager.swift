@@ -11,10 +11,6 @@ import Foundation
 typealias successBlock = (_ response: [String: AnyObject]) ->Void
 typealias failureBlock = (_ error: ErrorHandler) -> Void
 
-/*
- Service cagrilari singleton bir method uzerinden cagrilmistir
- */
-
 final class ServiceManager: NSObject {
     
     private let urlStr = "https://jsonblob.com/api/jsonBlob/3cf871b2-f7cd-11e6-95c2-115605632e53"

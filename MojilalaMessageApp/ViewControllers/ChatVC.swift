@@ -53,6 +53,7 @@ class ChatVC: UIViewController {
         NotificationCenter.default.removeObserver(self)
     }
  
+    //MARK: - Setup UI
     private func setupUI() {
         navigationController?.navigationBar.blueStyleNavigationBar()
         navigationItem.title = userNickName
@@ -71,7 +72,7 @@ class ChatVC: UIViewController {
         }
     }
     
-    //MARK: NotificationCenter handlers
+    //MARK: Keyboard NotificationCenter Handlers
     func showKeyboard(notification: Notification) {
         if let frame = notification.userInfo![UIKeyboardFrameEndUserInfoKey] as? NSValue {
             let height = frame.cgRectValue.height

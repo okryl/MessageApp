@@ -23,8 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationController.navigationBar.transparentNavigationBar()
 
         if let currentUserNickName = UserManager.sharedInstance().currentUserNickName {
+            loginVC.isAnimation = false
+            
             let chatVC = loginVC.storyboard?.instantiateViewController(withIdentifier: "ChatVC") as! ChatVC
             chatVC.userNickName = currentUserNickName
+            
             navigationController.pushViewController(chatVC, animated: false)
         }
         

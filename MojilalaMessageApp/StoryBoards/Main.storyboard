@@ -30,17 +30,28 @@
                                     <constraint firstAttribute="height" constant="175" id="xg4-qk-yVQ"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qs9-jK-ewK" customClass="AnimationView" customModule="MojilalaMessageApp" customModuleProvider="target">
+                                <rect key="frame" x="107.5" y="208" width="160" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Tt2-x0-1Rr"/>
+                                    <constraint firstAttribute="width" constant="160" id="kAp-RL-xHm"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="a6J-1m-bgd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IdN-9l-BBT"/>
                             <constraint firstItem="a6J-1m-bgd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jgg-LV-vUT"/>
+                            <constraint firstItem="Qs9-jK-ewK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PYp-Ea-pUN"/>
+                            <constraint firstItem="a6J-1m-bgd" firstAttribute="top" secondItem="Qs9-jK-ewK" secondAttribute="bottom" constant="8" id="gjC-3Y-ewS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ww0-Ly-IYY"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="viewAnimation" destination="Qs9-jK-ewK" id="ziG-yd-lfN"/>
                         <outlet property="viewLogin" destination="a6J-1m-bgd" id="CcZ-kc-Bls"/>
                     </connections>
                 </viewController>

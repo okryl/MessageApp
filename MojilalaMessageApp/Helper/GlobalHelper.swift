@@ -15,5 +15,14 @@ func mainThread(main: @escaping () -> ()) {
     })
 }
 
+//Dispatch After Shortcut
+func delay (
+    seconds: Double,
+    after: @escaping () -> Void) {
+    
+    DispatchQueue.main.asyncAfter(deadline: .now() + seconds, execute: after)
+}
+
 //Shake Label for login nickname error
 class ShakeLabel:UILabel, ShakeableProtocol {}
+

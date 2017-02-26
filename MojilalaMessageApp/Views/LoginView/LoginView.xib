@@ -30,13 +30,13 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your nickname must be longer than two characters" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4n-3V-PGb" customClass="ShakeLabel" customModule="MojilalaMessageApp" customModuleProvider="target">
-                    <rect key="frame" x="20" y="78" width="335" height="16.5"/>
-                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
-                    <color key="textColor" red="1" green="0.074743433492410416" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="20" y="78" width="335" height="18"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L9-MX-O7A">
-                    <rect key="frame" x="126" y="105" width="123" height="33"/>
+                    <rect key="frame" x="126" y="106.5" width="123" height="33"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="123" id="bD7-9t-QDN"/>

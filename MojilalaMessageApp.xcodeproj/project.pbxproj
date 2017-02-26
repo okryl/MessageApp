@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0AEF6E4074A96C0CB1A4F831 /* Pods_MojilalaMessageApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAB8E49B056C383615728C2 /* Pods_MojilalaMessageApp.framework */; };
+		2A4F7EB61E62DCEF00BC661F /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F7EB51E62DCEF00BC661F /* ReusableCell.swift */; };
 		2A7184131E60C9F700133ACE /* UINavigationBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7184121E60C9F700133ACE /* UINavigationBar+Extension.swift */; };
+		2AA38EC21E62F16A00ECC2C4 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA38EC11E62F16A00ECC2C4 /* AnimationView.swift */; };
 		2ACA16101E5F586400E2910E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA160F1E5F586400E2910E /* LoginVC.swift */; };
 		2ACA16181E5F5ADA00E2910E /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA16171E5F5ADA00E2910E /* ServiceManager.swift */; };
 		2ACA161A1E5F5AEB00E2910E /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA16191E5F5AEB00E2910E /* UserManager.swift */; };
@@ -36,7 +38,6 @@
 		2AE81DAB1E60CDC3003F61EC /* SenderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AE81DA91E60CDC3003F61EC /* SenderCell.xib */; };
 		2AE81DAE1E60CDD8003F61EC /* ReceiverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE81DAC1E60CDD8003F61EC /* ReceiverCell.swift */; };
 		2AE81DAF1E60CDD8003F61EC /* ReceiverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AE81DAD1E60CDD8003F61EC /* ReceiverCell.xib */; };
-		2AE81DB11E60CEDA003F61EC /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE81DB01E60CEDA003F61EC /* ReusableCell.swift */; };
 		2AE81DB51E60CF46003F61EC /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE81DB41E60CF46003F61EC /* UITableView+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A4F7EB51E62DCEF00BC661F /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 		2A7184121E60C9F700133ACE /* UINavigationBar+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Extension.swift"; sourceTree = "<group>"; };
+		2AA38EC11E62F16A00ECC2C4 /* AnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		2ACA160F1E5F586400E2910E /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		2ACA16171E5F5ADA00E2910E /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		2ACA16191E5F5AEB00E2910E /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
@@ -91,7 +94,6 @@
 		2AE81DA91E60CDC3003F61EC /* SenderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SenderCell.xib; sourceTree = "<group>"; };
 		2AE81DAC1E60CDD8003F61EC /* ReceiverCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverCell.swift; sourceTree = "<group>"; };
 		2AE81DAD1E60CDD8003F61EC /* ReceiverCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReceiverCell.xib; sourceTree = "<group>"; };
-		2AE81DB01E60CEDA003F61EC /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReusableCell.swift; path = "../../../../YS-ITunes/YS-ITunes/Classes/Protocol/ReusableCell.swift"; sourceTree = "<group>"; };
 		2AE81DB41E60CF46003F61EC /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		40D757B0F4E345BBAAC4B456 /* Pods-MojilalaMessageApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MojilalaMessageApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MojilalaMessageApp/Pods-MojilalaMessageApp.release.xcconfig"; sourceTree = "<group>"; };
 		8AAB8E49B056C383615728C2 /* Pods_MojilalaMessageApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MojilalaMessageApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,14 @@
 				2AE81DB41E60CF46003F61EC /* UITableView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2AA38EC01E62F16100ECC2C4 /* AnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				2AA38EC11E62F16A00ECC2C4 /* AnimationView.swift */,
+			);
+			path = AnimationView;
 			sourceTree = "<group>";
 		};
 		2ACA16151E5F5ADA00E2910E /* Manager */ = {
@@ -299,6 +309,7 @@
 		2AE4AA701E5DEE17009E1C7A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2AA38EC01E62F16100ECC2C4 /* AnimationView */,
 				2AE81DA71E60CD4B003F61EC /* Cells */,
 				2ACA162C1E5F8AAA00E2910E /* ChatView */,
 				2ACA162F1E5F8AAA00E2910E /* LoginView */,
@@ -309,9 +320,9 @@
 		2AE4AA741E5DF02D009E1C7A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				2AE81DB01E60CEDA003F61EC /* ReusableCell.swift */,
 				2AE4AA7B1E5DF3D0009E1C7A /* NibLoadableView.swift */,
 				2ACA161F1E5F5BF100E2910E /* ShakebleProtocol.swift */,
+				2A4F7EB51E62DCEF00BC661F /* ReusableCell.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -535,6 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A4F7EB61E62DCEF00BC661F /* ReusableCell.swift in Sources */,
 				2ACA164A1E5F8B0000E2910E /* Messages.swift in Sources */,
 				2AE4AA861E5E1E3E009E1C7A /* ChatVC.swift in Sources */,
 				2AE4AA7C1E5DF3D0009E1C7A /* NibLoadableView.swift in Sources */,
@@ -544,7 +556,6 @@
 				2ACA164B1E5F8B0000E2910E /* User.swift in Sources */,
 				2ACA161A1E5F5AEB00E2910E /* UserManager.swift in Sources */,
 				2AE81DB51E60CF46003F61EC /* UITableView+Extension.swift in Sources */,
-				2AE81DB11E60CEDA003F61EC /* ReusableCell.swift in Sources */,
 				2ACA16371E5F8AAA00E2910E /* ChatView.swift in Sources */,
 				2ACA16581E5F8B7B00E2910E /* BaseCustomView.swift in Sources */,
 				2A7184131E60C9F700133ACE /* UINavigationBar+Extension.swift in Sources */,
@@ -553,6 +564,7 @@
 				2ACA16101E5F586400E2910E /* LoginVC.swift in Sources */,
 				2AE81DAA1E60CDC3003F61EC /* SenderCell.swift in Sources */,
 				2ACA16451E5F8AE900E2910E /* MessageResponse.swift in Sources */,
+				2AA38EC21E62F16A00ECC2C4 /* AnimationView.swift in Sources */,
 				2AE81DAE1E60CDD8003F61EC /* ReceiverCell.swift in Sources */,
 				2ACA16391E5F8AAA00E2910E /* LoginView.swift in Sources */,
 			);
